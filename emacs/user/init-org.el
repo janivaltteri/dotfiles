@@ -5,19 +5,13 @@
   :defer t
   :mode ("\\.org$" . org-mode)
   :config
-  (setq org-log-done 'time))
-
-(use-package ox-latex
-  :ensure t
-  :defer t
-  :after org
-  :config
+  (setq org-log-done 'time)
   (unless (boundp 'org-latex-classes)
     (setq org-latex-classes nil))
   (add-to-list 'org-latex-classes
-	       '("article"
-		 "\\documentclass{article}"
-		 ("\\section{%s}" . "\\section*{%s}"))))
+               '("article"
+                 "\\documentclass{article}"
+                 ("\\section{%s}" . "\\section*{%s}"))))
 
 (use-package evil-org
   :ensure t
