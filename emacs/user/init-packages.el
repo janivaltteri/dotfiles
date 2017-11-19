@@ -71,6 +71,18 @@
   :config
   (setq org-log-done 'time))
 
+(use-package ox-latex
+  :ensure t
+  :defer t
+  :after org
+  :config
+  (unless (boundp 'org-latex-classes)
+    (setq org-latex-classes nil))
+  (add-to-list 'org-latex-classes
+	       '("article"
+		 "\\documentclass{article}"
+		 ("\\section{%s}" . "\\section*{%s}"))))
+
 (require 'init-telephone-line)
 (require 'init-languages)
 
