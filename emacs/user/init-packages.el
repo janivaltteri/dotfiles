@@ -5,6 +5,10 @@
   :ensure t
   :defer t)
 
+(use-package ess
+  :ensure t
+  :defer t)	      
+
 (use-package evil
   :ensure t
   :config
