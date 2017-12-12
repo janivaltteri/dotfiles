@@ -22,15 +22,27 @@
   :ensure t
   :defer t)
 
-(use-package julia-shell
+(use-package julia-shell-mode
   :ensure t
-  :defer t
-  :config
-  (defun my-julia-mode-hooks ()
-    (require 'julia-shell-mode))
-  (add-hook 'julia-mode-hook 'my-julia-mode-hooks)
-  (define-key julia-mode-map (kbd "C-c C-c") 'julia-shell-run-region-or-line)
-  (define-key julia-mode-map (kbd "C-c C-s") 'julia-shell-save-and-go))
+  :defer t)
+
+;  :config
+;  (use-package julia-shell)
+;  (defun my-julia-mode-hooks ()
+;    (require 'julia-shell))
+;  (add-hook 'julia-mode-hook 'my-julia-mode-hooks)
+;  (define-key julia-mode-map (kbd "C-c C-c") 'julia-shell-run-region-or-line)
+;  (define-key julia-mode-map (kbd "C-c C-s") 'julia-shell-save-and-go))
+
+;(use-package julia-shell
+;  :ensure t
+;  :defer t
+;  :config
+;  (defun my-julia-mode-hooks ()
+;    (require 'julia-shell-mode))
+;  (add-hook 'julia-mode-hook 'my-julia-mode-hooks)
+;  (define-key julia-mode-map (kbd "C-c C-c") 'julia-shell-run-region-or-line)
+;  (define-key julia-mode-map (kbd "C-c C-s") 'julia-shell-save-and-go))
 
 (use-package slime
   :ensure t
