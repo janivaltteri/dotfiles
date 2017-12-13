@@ -22,9 +22,9 @@
   :ensure t
   :defer t)
 
-(use-package julia-shell-mode
-  :ensure t
-  :defer t)
+;(use-package julia-shell-mode
+;  :ensure t
+;  :defer t)
 
 ;  :config
 ;  (use-package julia-shell)
