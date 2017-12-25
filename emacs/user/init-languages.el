@@ -20,29 +20,21 @@
 
 (use-package julia-mode
   :ensure t
-  :defer t)
+  :defer t
+  :mode "\\.jl\\'")
 
-;(use-package julia-shell-mode
-;  :ensure t
-;  :defer t)
-
-;  :config
-;  (use-package julia-shell)
-;  (defun my-julia-mode-hooks ()
-;    (require 'julia-shell))
-;  (add-hook 'julia-mode-hook 'my-julia-mode-hooks)
-;  (define-key julia-mode-map (kbd "C-c C-c") 'julia-shell-run-region-or-line)
-;  (define-key julia-mode-map (kbd "C-c C-s") 'julia-shell-save-and-go))
-
-;(use-package julia-shell
-;  :ensure t
-;  :defer t
-;  :config
-;  (defun my-julia-mode-hooks ()
-;    (require 'julia-shell-mode))
-;  (add-hook 'julia-mode-hook 'my-julia-mode-hooks)
-;  (define-key julia-mode-map (kbd "C-c C-c") 'julia-shell-run-region-or-line)
-;  (define-key julia-mode-map (kbd "C-c C-s") 'julia-shell-save-and-go))
+(use-package julia-repl
+  :ensure t
+  :defer t
+  ;; :hook julia-mode
+  :bind (("C-c C-c" . julia-repl-send-region-or-line)
+         ("C-c C-b" . julia-repl-send-buffer)
+         ("C-c C-z" . julia-repl)
+         ("<C-return>" . julia-repl-send-line)
+         ("C-c C-e" . julia-repl-edit)
+         ("C-c C-d" . julia-repl-doc)
+         ("C-c C-w" . julia-repl-workspace)
+	 ("C-c C-m" . julia-repl-macroexpand)))
 
 (use-package slime
   :ensure t
