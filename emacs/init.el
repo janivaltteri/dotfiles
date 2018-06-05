@@ -22,6 +22,8 @@
 ;                    :weight 'normal
 ;                    :width 'normal)
 
+(setq custom-safe-themes t)
+
 (require 'init-packages)
 (require 'init-misc-configs)
 
