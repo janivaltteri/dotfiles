@@ -14,10 +14,16 @@
   :config
   (evil-mode 1))
 
-(use-package base16-theme
+;(use-package base16-theme
+;  :ensure t
+;  :config
+;  (load-theme 'base16-eighties t))
+
+(use-package spacemacs-theme
   :ensure t
+  :no-require t
   :config
-  (load-theme 'base16-eighties t))
+  (load-theme 'spacemacs-dark))
 
 (use-package which-key
   :ensure t
