@@ -14,6 +14,11 @@
   :config
   (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode))
 
+(use-package d-mode
+  :ensure t
+  :defer t
+  :mode "\\.d\\'")
+
 (use-package gnuplot-mode
   :ensure t
   :defer t)
