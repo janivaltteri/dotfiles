@@ -9,6 +9,7 @@
   (unless (boundp 'org-latex-classes)
     (setq org-latex-classes nil))
   (setq org-confirm-babel-evaluate nil)
+  (setq org-highlight-latex-and-related '(latex))
   (add-to-list 'org-latex-classes
                '("jva-article"
                  "\\documentclass{article}"
