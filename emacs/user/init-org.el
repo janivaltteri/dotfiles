@@ -8,10 +8,13 @@
   (setq org-log-done 'time)
   (unless (boundp 'org-latex-classes)
     (setq org-latex-classes nil))
+  (setq org-confirm-babel-evaluate nil)
   (add-to-list 'org-latex-classes
-               '("article"
+               '("jva-article"
                  "\\documentclass{article}"
-                 ("\\section{%s}" . "\\section*{%s}"))))
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}"))))
 
 (use-package evil-org
   :ensure t
