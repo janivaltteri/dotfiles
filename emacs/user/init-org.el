@@ -10,6 +10,13 @@
     (setq org-latex-classes nil))
   (setq org-confirm-babel-evaluate nil)
   (setq org-highlight-latex-and-related '(latex))
+  (setq org-babel-clojure-backend 'cider)
+  (add-to-list 'org-latex-classes
+	       '("jva-beamer"
+		 "\\documentclass\[presentation\]\{beamer\}"
+		 ("\\section\{%s\}" . "\\section*\{%s\}")
+		 ("\\subsection\{%s\}" . "\\subsection*\{%s\}")
+		 ("\\subsubsection\{%s\}" . "\\subsubsection*\{%s\}")))
   (add-to-list 'org-latex-classes
                '("jva-article"
                  "\\documentclass{article}"

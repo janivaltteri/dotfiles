@@ -19,9 +19,16 @@
   :defer t
   :mode "\\.d\\'")
 
-(use-package gnuplot-mode
+(use-package gnuplot
   :ensure t
   :defer t)
+
+(use-package gnuplot-mode
+  :ensure t
+  :defer t
+  :mode "\\.gnuplot\\'"
+  :config
+  (el-get 'sync 'gnuplot-mode))
 
 (use-package julia-mode
   :ensure t
@@ -40,6 +47,12 @@
          ("C-c C-d" . julia-repl-doc)
          ("C-c C-w" . julia-repl-workspace)
 	 ("C-c C-m" . julia-repl-macroexpand)))
+
+(use-package maxima
+  :ensure nil
+  :load-path "/usr/share/emacs/site-lisp/maxima"
+  :commands (maxima)
+  :mode ("\\.ma[cx]" . maxima-mode))
 
 (use-package slime
   :ensure t
