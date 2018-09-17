@@ -11,6 +11,7 @@
   (setq org-confirm-babel-evaluate nil)
   (setq org-highlight-latex-and-related '(latex))
   (setq org-babel-clojure-backend 'cider)
+  (setq org-babel-python-command "python3")
   (add-to-list 'org-latex-classes
 	       '("jva-beamer"
 		 "\\documentclass\[presentation\]\{beamer\}"
