@@ -34,4 +34,13 @@
   (add-hook 'evil-org-mode-hook
 	    (lambda () (evil-org-set-key-theme))))
 
+;;(use-package ox-pandoc)
+
+(use-package ox-reveal
+  :config
+  (setq Org-Reveal-root "file:///home/jva/gate/softa/reveal.js")
+  (setq Org-Reveal-title-slide nil))
+
+(use-package ox-impress-js)
+
 (provide 'init-org)
