@@ -68,5 +68,6 @@
 (require 'init-org)
 (require 'init-telephone-line)
 (require 'init-languages)
+(require 'init-web)
 
 (provide 'init-packages)
