@@ -1,18 +1,18 @@
 ;;; -*- lexical-binding: t -*-
 
-(use-package clojure-mode
-  :ensure t
-  :defer t
-  :mode ("\\.clj\\'"  . clojure-mode)
-	("\\.cljs\\'" . clojure-mode)
-	("\\.cljc\\'" . clojure-mode))
+;; (use-package clojure-mode
+;;   :ensure t
+;;   :defer t
+;;   :mode ("\\.clj\\'"  . clojure-mode)
+;; 	("\\.cljs\\'" . clojure-mode)
+;; 	("\\.cljc\\'" . clojure-mode))
 
-(use-package cider
-  :ensure t
-  :defer t
-  :after clojure-mode
-  :config
-  (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode))
+;; (use-package cider
+;;   :ensure t
+;;   :defer t
+;;   :after clojure-mode
+;;   :config
+;;   (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode))
 
 (use-package d-mode
   :ensure t
@@ -47,6 +47,10 @@
          ("C-c C-d" . julia-repl-doc)
          ("C-c C-w" . julia-repl-workspace)
 	 ("C-c C-m" . julia-repl-macroexpand)))
+
+(use-package lua-mode
+  :ensure t
+  :defer t)
 
 (use-package maxima
   :ensure nil
