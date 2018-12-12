@@ -19,6 +19,14 @@
   :defer t
   :mode "\\.d\\'")
 
+(use-package geiser
+  :ensure t
+  :defer t
+  :config
+  (progn
+   (setq geiser-active-implementations '(chicken))
+   (setq geiser-default-implementation 'chicken)))
+
 (use-package gnuplot
   :ensure t
   :defer t)
