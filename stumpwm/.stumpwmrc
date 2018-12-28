@@ -1,0 +1,23 @@
+;; -*- Mode:p Lisp -*-
+;;; .stumpwmrc --- StumpWM Init File
+
+(in-package :stumpwm)
+
+(set-prefix-key (kbd "F9"))
+
+;;(set-prefix-key (kbd "Menu"))
+
+(defcommand firefox () ()
+  (run-or-raise "firefox" '(:class "Firefox")))
+(define-key *root-map* (kbd "f") "firefox")
+
+(defcommand termite () ()
+  (run-or-raise "termite" '(:instance "termite")))
+(define-key *root-map* (kbd "c") "termite")
+
+(define-key *top-map* (kbd "M-q") "quit")
+
+;; End:
+
+;;; stumpwmrc ends here
+
