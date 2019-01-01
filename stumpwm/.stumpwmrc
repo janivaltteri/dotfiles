@@ -7,6 +7,9 @@
 
 ;;(set-prefix-key (kbd "Menu"))
 
+(run-shell-command "xsetroot -cursor_name left_ptr")
+(run-shell-command "xkbcomp ~/xkb-new.txt $DISPLAY")
+
 (defcommand firefox () ()
   (run-or-raise "firefox" '(:class "Firefox")))
 (define-key *root-map* (kbd "f") "firefox")
