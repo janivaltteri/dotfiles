@@ -38,14 +38,14 @@
   :config
   (el-get 'sync 'gnuplot-mode))
 
-(use-package julia-mode
-  :ensure t
-  :defer t
-  :mode "\\.jl\\'")
+;;(use-package julia-mode
+;;  :ensure t
+;;  :defer t
+;;  :mode "\\.jl\\'")
 
-(use-package julia-repl
-  :ensure t
-  :defer t)
+;;(use-package julia-repl
+;;  :ensure t
+;;  :defer t)
 
   ;; :hook julia-mode
   ;; :bind (("C-c C-c" . julia-repl-send-region-or-line)
