@@ -5,8 +5,6 @@
 
 (set-prefix-key (kbd "F9"))
 
-;;(set-prefix-key (kbd "Menu"))
-
 (run-shell-command "xsetroot -cursor_name left_ptr")
 (run-shell-command "xkbcomp ~/xkb-new.txt $DISPLAY")
 
@@ -18,7 +16,7 @@
   (run-or-raise "termite" '(:instance "termite")))
 (define-key *root-map* (kbd "c") "termite")
 
-(define-key *top-map* (kbd "M-q") "quit")
+(define-key *top-map* (kbd "C-M-q") "quit")
 
 ;; End:
 
