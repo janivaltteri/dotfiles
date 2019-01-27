@@ -14,11 +14,6 @@
   :config
   (evil-mode 1))
 
-;(use-package base16-theme
-;  :ensure t
-;  :config
-;  (load-theme 'base16-eighties t))
-
 (use-package spacemacs-theme
   :ensure t
   :no-require t
@@ -50,7 +45,16 @@
 
 (use-package ivy-bibtex
   :ensure t
-  :defer t)
+  :defer t
+  :config
+  (setq bibtex-completion-bibliography '("/home/jva/key/latexia/kirjasto/references.bib")))
+
+;;  :config
+;;  (setq ivy-re-builders-alist
+;;      '((ivy-bibtex . ivy--regex-ignore-order)
+;;        (t . ivy--regex-plus)))
+;;  (setq bibtex-completion-bibliography
+;;      '("/home/jva/key/latexia/kirjasto/references.bib")))
 
 (use-package neotree
   :ensure t
