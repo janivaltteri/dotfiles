@@ -47,7 +47,7 @@
   :ensure t
   :defer t
   :config
-  (setq bibtex-completion-bibliography '("/home/jva/key/latexia/kirjasto/references.bib")))
+  (setq bibtex-completion-bibliography '("/home/jva/bib/references.bib")))
 
 ;;  :config
 ;;  (setq ivy-re-builders-alist
