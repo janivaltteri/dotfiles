@@ -16,6 +16,14 @@
   (run-or-raise "termite" '(:instance "termite")))
 (define-key *root-map* (kbd "c") "termite")
 
+(defcommand urxvt () ()
+  (run-or-raise "urxvt" '(:instance "urxvt")))
+(define-key *root-map* (kbd "u") "urxvt")
+
+(defcommand kitty () ()
+  (run-or-raise "kitty" '(:class "kitty")))
+(define-key *root-map* (kbd "y") "kitty")
+
 (define-key *top-map* (kbd "C-M-q") "quit")
 
 ;; End:
