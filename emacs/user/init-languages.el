@@ -38,6 +38,10 @@
   :config
   (el-get 'sync 'gnuplot-mode))
 
+(use-package hy-mode
+  :ensure t
+  :defer t)
+
 ;;(use-package julia-mode
 ;;  :ensure t
 ;;  :defer t
