@@ -43,4 +43,6 @@
 
 (use-package ox-impress-js)
 
+(use-package ob-hy)
+
 (provide 'init-org)

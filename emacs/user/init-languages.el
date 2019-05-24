@@ -14,6 +14,10 @@
 ;;   :config
 ;;   (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode))
 
+(use-package arduino-mode
+  :ensure t
+  :defer t)
+
 (use-package d-mode
   :ensure t
   :defer t
@@ -61,9 +65,9 @@
   ;;        ("C-c C-w" . julia-repl-workspace)
   ;; 	 ("C-c C-m" . julia-repl-macroexpand)))
 
-(use-package lua-mode
-  :ensure t
-  :defer t)
+;;(use-package lua-mode
+;;  :ensure t
+;;  :defer t)
 
 (use-package maxima
   :ensure nil
@@ -77,3 +81,4 @@
   (setq inferior-lisp-program "/usr/bin/sbcl"))
 
 (provide 'init-languages)
+

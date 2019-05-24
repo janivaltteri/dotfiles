@@ -11,5 +11,9 @@
   (setq web-mode-enable-auto-expanding t)
   (setq web-mode-enable-css-colorization t))
 
+(use-package htmlize
+  :ensure t
+  :defer t)
+
 (provide 'init-web)
 
