@@ -23,6 +23,11 @@
   :defer t
   :mode "\\.d\\'")
 
+(use-package graphviz-dot-mode
+  :ensure t
+  :defer t
+  :mode "\\.dot\\'")
+
 (use-package geiser
   :ensure t
   :defer t
