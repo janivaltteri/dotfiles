@@ -80,6 +80,10 @@
   :commands (maxima)
   :mode ("\\.ma[cx]" . maxima-mode))
 
+(use-package pov-mode
+  :ensure t
+  :defer t)
+
 (use-package slime
   :ensure t
   :config
