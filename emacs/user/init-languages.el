@@ -33,8 +33,8 @@
   :defer t
   :config
   (progn
-   (setq geiser-active-implementations '(chicken))
-   (setq geiser-default-implementation 'chicken)))
+   (setq geiser-active-implementations '(chicken racket))
+   (setq geiser-default-implementation 'racket)))
 
 (use-package gnuplot
   :ensure t
@@ -51,14 +51,14 @@
   :ensure t
   :defer t)
 
-;;(use-package julia-mode
-;;  :ensure t
-;;  :defer t
-;;  :mode "\\.jl\\'")
+(use-package julia-mode
+  :ensure t
+  :defer t
+  :mode "\\.jl\\'")
 
-;;(use-package julia-repl
-;;  :ensure t
-;;  :defer t)
+(use-package julia-repl
+  :ensure t
+  :defer t)
 
   ;; :hook julia-mode
   ;; :bind (("C-c C-c" . julia-repl-send-region-or-line)
@@ -69,10 +69,6 @@
   ;;        ("C-c C-d" . julia-repl-doc)
   ;;        ("C-c C-w" . julia-repl-workspace)
   ;; 	 ("C-c C-m" . julia-repl-macroexpand)))
-
-;;(use-package lua-mode
-;;  :ensure t
-;;  :defer t)
 
 (use-package maxima
   :ensure nil
