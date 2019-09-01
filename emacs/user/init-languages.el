@@ -28,13 +28,32 @@
   :defer t
   :mode "\\.dot\\'")
 
-(use-package geiser
+(use-package racket-mode
   :ensure t
-  :defer t
-  :config
-  (progn
-   (setq geiser-active-implementations '(chicken racket))
-   (setq geiser-default-implementation 'racket)))
+  :defer t)
+
+;;(use-package geiser
+;;  :ensure t
+;;  :defer t
+;;  :config
+;;  (progn
+;;   (add-hook 'scheme-mode-hook 'geiser-mode)
+;;   (setq geiser-active-implementations '(racket))
+;;   (setq geiser-default-implementation 'racket)))
+
+;;(use-package geiser :ensure t)
+
+;; Scheme
+;;(defun my-scheme-mode-setup ()
+;;  "λ..."
+;;  (paredit-mode t)
+;;  (ac-geiser-setup))
+
+;;(use-package scheme :defer t
+;;  :hook ((geiser-mode-hook . my/scheme-mode-hook)
+;;         (scheme-mode-hook . my/scheme-mode-hook))
+;;  :custom
+;;  (geiser-active-implementations '(guile racket)))
 
 (use-package gnuplot
   :ensure t
