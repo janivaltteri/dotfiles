@@ -77,17 +77,18 @@
 
 (use-package julia-repl
   :ensure t
-  :defer t)
+  :defer t
+  :hook julia-mode)
 
-  ;; :hook julia-mode
-  ;; :bind (("C-c C-c" . julia-repl-send-region-or-line)
-  ;;        ("C-c C-b" . julia-repl-send-buffer)
-  ;;        ("C-c C-z" . julia-repl)
-  ;;        ("<C-return>" . julia-repl-send-line)
-  ;;        ("C-c C-e" . julia-repl-edit)
-  ;;        ("C-c C-d" . julia-repl-doc)
-  ;;        ("C-c C-w" . julia-repl-workspace)
-  ;; 	 ("C-c C-m" . julia-repl-macroexpand)))
+;;  :bind (("C-c C-c" . julia-repl-send-region-or-line)
+;;         ("C-c C-b" . julia-repl-send-buffer)
+;;         ("C-c C-z" . julia-repl)
+;;         ("<C-return>" . julia-repl-send-line)
+;;         ("C-c C-e" . julia-repl-edit)
+;;         ("C-c C-d" . julia-repl-doc)
+;;         ("C-c C-w" . julia-repl-workspace)
+;;  	 ("C-c C-m" . julia-repl-macroexpand))
+;;  :mode "\\.jl\\'")
 
 (use-package maxima
   :ensure nil
