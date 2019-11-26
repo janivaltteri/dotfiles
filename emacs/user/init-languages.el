@@ -100,6 +100,10 @@
   :ensure t
   :defer t)
 
+(use-package rust-mode
+  :ensure t
+  :defer t)
+
 (use-package slime
   :ensure t
   :config
