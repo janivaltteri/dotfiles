@@ -55,6 +55,10 @@
 ;;  :custom
 ;;  (geiser-active-implementations '(guile racket)))
 
+(use-package haskell-mode
+  :ensure t
+  :defer t)
+
 (use-package gnuplot
   :ensure t
   :defer t)
