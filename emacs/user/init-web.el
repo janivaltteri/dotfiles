@@ -15,5 +15,11 @@
   :ensure t
   :defer t)
 
+(use-package js2-mode
+  :mode "\\.js\\'"
+  :config
+  (setq-default js-indent-level 2)
+  (setq-default js2-ignored-warnings '("msg.extra.trailing.comma")))
+
 (provide 'init-web)
 
