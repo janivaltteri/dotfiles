@@ -12,6 +12,14 @@
   (setq org-highlight-latex-and-related '(latex))
   ;;(setq org-babel-clojure-backend 'cider)
   (setq org-babel-python-command "python3")
+  ;;(setq indent-tabs-mode nil)
+  ;;(setq org-src-preserve-indentation nil)
+  (add-hook 'python-mode-hook
+    (lambda ()
+      (setq indent-tabs-mode nil)
+      (setq python-indent 4)
+      (setq tab-width 4))
+    (untabify (point-min) (point-max)))
   (setq org-export-latex-listings 'listings)
   (setq org-latex-listings t)
   (add-to-list 'org-latex-packages-alist '("" "listings"))
@@ -23,7 +31,7 @@
 		 ("\\subsubsection\{%s\}" . "\\subsubsection*\{%s\}")))
   (add-to-list 'org-latex-classes
                '("jva-article"
-                 "\\documentclass{article}"
+                 "\\documentclass[a4paper,11pt]{article}"
                  ("\\section{%s}" . "\\section*{%s}")
                  ("\\subsection{%s}" . "\\subsection*{%s}")
                  ("\\subsubsection{%s}" . "\\subsubsection*{%s}"))))

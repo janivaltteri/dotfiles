@@ -110,8 +110,13 @@
 
 (use-package slime
   :ensure t
+  :defer t
   :config
   (setq inferior-lisp-program "/usr/bin/sbcl"))
+
+(use-package typescript-mode
+  :ensure t
+  :defer t)
 
 (provide 'init-languages)
 
