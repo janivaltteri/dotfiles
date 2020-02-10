@@ -3,8 +3,8 @@ urxvt.scrollBar: false
 urxvt.background: black
 urxvt.foreground: green
 
-urxvt.font: xft:Inconsolata:pixelsize=14:antialias=true
-urxvt.boldFont: xft:Inconsolata:pixelsize=14:weight=bold:antialias=true
+urxvt.font: xft:dejavu sans mono:pixelsize=16:antialias=true
+urxvt.boldFont: xft:dejavu sans mono:pixelsize=16:weight=bold:antialias=true
 
 XClock*foreground: #fbfbfb
 XClock*background: #000018
