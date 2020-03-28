@@ -9,6 +9,13 @@
 (global-set-key (kbd "C-ö") 'previous-buffer)
 (global-set-key (kbd "C-'") 'other-window)
 
+;; write latin long vowels
+(global-set-key (kbd "M-g a") "ā")
+(global-set-key (kbd "M-g e") "ē")
+(global-set-key (kbd "M-g i") "ī")
+(global-set-key (kbd "M-g o") "ō")
+(global-set-key (kbd "M-g u") "ū")
+
 (define-key evil-insert-state-map "\C-w" 'evil-delete)
 (define-key evil-insert-state-map "\C-y" 'yank)
 
