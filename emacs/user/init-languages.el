@@ -1,11 +1,11 @@
 ;;; -*- lexical-binding: t -*-
 
-;; (use-package clojure-mode
-;;   :ensure t
-;;   :defer t
-;;   :mode ("\\.clj\\'"  . clojure-mode)
-;; 	("\\.cljs\\'" . clojure-mode)
-;; 	("\\.cljc\\'" . clojure-mode))
+(use-package clojure-mode
+  :ensure t
+  :defer t
+  :mode ("\\.clj\\'"  . clojure-mode)
+	("\\.cljs\\'" . clojure-mode)
+	("\\.cljc\\'" . clojure-mode))
 
 ;; (use-package cider
 ;;   :ensure t

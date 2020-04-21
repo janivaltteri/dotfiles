@@ -60,4 +60,10 @@
 
 (use-package ob-hy)
 
+(use-package ob-ipython
+  :ensure t
+  :defer t
+  :config
+  (add-hook 'org-babel-after-execute-hook 'org-display-inline-images 'append))
+
 (provide 'init-org)
