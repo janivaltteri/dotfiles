@@ -76,13 +76,16 @@
 
 (use-package julia-mode
   :ensure t
-  :defer t
-  :mode "\\.jl\\'")
+  :defer t)
+;;  :mode "\\.jl\\'")
 
 (use-package julia-repl
   :ensure t
   :defer t
-  :hook julia-mode)
+  :config
+  (add-hook 'julia-mode-hook 'julia-repl-mode))
+
+;;  :hook julia-mode)
 
 ;;  :bind (("C-c C-c" . julia-repl-send-region-or-line)
 ;;         ("C-c C-b" . julia-repl-send-buffer)

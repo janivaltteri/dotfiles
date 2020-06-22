@@ -14,6 +14,10 @@
   :config
   (evil-mode 1))
 
+(use-package magit
+  :ensure t
+  :defer t)
+
 (use-package spacemacs-theme
   :ensure t
   :no-require t
