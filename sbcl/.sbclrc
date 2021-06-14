@@ -6,7 +6,7 @@
   (when (probe-file quicklisp-init)
     (load quicklisp-init)))
 
-(setf *read-default-float-format* 'double-float)
+;;(setf *read-default-float-format* 'double-float)
 
 ;;(ql:quickload "iterate")
 

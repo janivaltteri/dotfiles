@@ -32,14 +32,22 @@
   :ensure t
   :defer t)
 
+(use-package geiser-chicken
+  :ensure t
+  :defer t
+  :config
+  (progn
+   (setq geiser-chicken-binary "chicken-csi")
+   (setq scheme-program-name "chicken-csi")))
+
 ;;(use-package geiser
 ;;  :ensure t
 ;;  :defer t
 ;;  :config
 ;;  (progn
 ;;   (add-hook 'scheme-mode-hook 'geiser-mode)
-;;   (setq geiser-active-implementations '(racket))
-;;   (setq geiser-default-implementation 'racket)))
+;;   (setq geiser-active-implementations '(chicken))
+;;   (setq geiser-default-implementation 'chicken)))
 
 ;;(use-package geiser :ensure t)
 
