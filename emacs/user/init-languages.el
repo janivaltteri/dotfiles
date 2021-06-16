@@ -1,11 +1,11 @@
 ;;; -*- lexical-binding: t -*-
 
-(use-package clojure-mode
-  :ensure t
-  :defer t
-  :mode ("\\.clj\\'"  . clojure-mode)
-	("\\.cljs\\'" . clojure-mode)
-	("\\.cljc\\'" . clojure-mode))
+;;(use-package clojure-mode
+;;  :ensure t
+;;  :defer t
+;;  :mode ("\\.clj\\'"  . clojure-mode)
+;;	("\\.cljs\\'" . clojure-mode)
+;;	("\\.cljc\\'" . clojure-mode))
 
 ;; (use-package cider
 ;;   :ensure t
@@ -39,6 +39,10 @@
   (progn
    (setq geiser-chicken-binary "chicken-csi")
    (setq scheme-program-name "chicken-csi")))
+
+(use-package geiser-racket
+  :ensure t
+  :defer t)
 
 ;;(use-package geiser
 ;;  :ensure t
@@ -125,7 +129,7 @@
   :config
   (setq inferior-lisp-program "/usr/bin/sbcl"))
 
-(use-package typescript-mode
+(use-package zig-mode
   :ensure t
   :defer t)
 
